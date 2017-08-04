@@ -20,7 +20,7 @@ public class InputOutputStream {
         FileInputStream fis = new FileInputStream(path);
         byte[] buf = new byte[1024];
         //保存读取字节的个数
-        int len = 0;
+        int len = -1;
         while ((len = fis.read(buf))!= -1) {
             System.out.println(new String(buf, 0, len));
         }

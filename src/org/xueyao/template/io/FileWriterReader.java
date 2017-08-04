@@ -34,7 +34,7 @@ public class FileWriterReader {
     public static void fileReader(String path) throws IOException {
         FileReader fr = new FileReader(path);
         char[] chs = new char[1024];
-        int len;
+        int len = -1;
         while ((len = fr.read(chs))!= -1) {
             System.out.println(new String(chs, 0, len));
         }
