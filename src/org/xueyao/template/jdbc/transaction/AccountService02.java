@@ -26,7 +26,7 @@ public class AccountService02 {
             //提交事务
             //con.commit();
             //使用dbutils管理事务
-            DbUtils.rollbackAndClose(con);
+            DbUtils.commitAndClose(con);
             System.out.println("转账成功");
             
         } catch (SQLException e) {
